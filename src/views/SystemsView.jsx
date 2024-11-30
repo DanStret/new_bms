@@ -1,22 +1,12 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import AdminNavbar from "../components/AdminNavbar";
+import Sidebar from '../components/Sidebar/Sidebar';
+import AdminNavbar from "../components/Navbars/AdminNavbar";
 
 const SystemsView = () => {
     return (
         <div className="main-layout">
             {/* Sidebar */}
-            <Sidebar
-                routes={[
-                    { path: "/dashboard", name: "Dashboard", icon: "tim-icons icon-chart-bar-32" },
-                    { path: "/systems", name: "Sistemas", icon: "tim-icons icon-settings-gear-63" },
-                ]}
-                logo={{
-                    innerLink: "/dashboard",
-                    imgSrc: require("assets/img/react-logo.png"), // Cambia la ruta según tu proyecto
-                    text: "BMS",
-                }}
-            />
+            <Sidebar/>
 
             {/* Contenido principal */}
             <div className="main-content">

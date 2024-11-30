@@ -1,16 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import AdminLayout from './layouts/Admin/Admin';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SystemsView from "./views/SystemsView";
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/admin" component={AdminLayout} />
-        {/* Otras rutas */}
-      </Switch>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/admin" element={<SystemsView />} />
+                {/* Otras rutas */}
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
