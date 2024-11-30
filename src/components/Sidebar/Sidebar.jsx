@@ -11,8 +11,7 @@ import PerfectScrollbar from "perfect-scrollbar";
 import { Nav, NavLink as ReactstrapNavLink } from "reactstrap";
 import {
   BackgroundColorContext,
-  backgroundColors,
-} from "contexts/BackgroundColorContext";
+} from "../../contexts/BackgroundColorContext";
 
 var ps;
 

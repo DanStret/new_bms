@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import { BackgroundColorProvider } from "./contexts/BackgroundColorContext";
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import AdminLayout from './layouts/Admin/Admin';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <BackgroundColorProvider>
-            {}
-        </BackgroundColorProvider>
-  )
+    <Router>
+      <Switch>
+        <Route path="/admin" component={AdminLayout} />
+        {/* Otras rutas */}
+      </Switch>
+    </Router>
+  );
 }
 
-export default App
+export default App;
