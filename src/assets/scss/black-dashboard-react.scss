@@ -1,0 +1,13 @@
+// Primero importa las funciones y variables de Bootstrap
+@use "node_modules/bootstrap/scss/functions" as *;
+@use "node_modules/bootstrap/scss/variables" as *;
+@use "node_modules/bootstrap/scss/mixins" as *;
+
+// Después importa los componentes de Bootstrap que realmente necesitas
+@use "node_modules/bootstrap/scss/reboot" as *;
+@use "node_modules/bootstrap/scss/grid" as *;
+@use "node_modules/bootstrap/scss/buttons" as *;
+
+// Personaliza tus propios estilos si es necesario
+@use "black-dashboard-react/custom/functions" as *;
+@use "black-dashboard-react/custom/variables" as *;
